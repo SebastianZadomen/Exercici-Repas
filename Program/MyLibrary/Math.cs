@@ -25,18 +25,28 @@
                 return "Algunos de sus numeros es negativo";
             }
         }
-        public static string ConversionTemperatura(double celsius)
+        public static string ConversionTemperaturaFahrenheit(double celsius)
         {
-                double fahrenheit = 0;
-                fahrenheit = celsius * 1.8;
-                fahrenheit = fahrenheit + 32;
+            double fahrenheit = 0;
+            fahrenheit = celsius * 1.8;
+            fahrenheit = fahrenheit + 32;
 
-                int redondeo = Convert.ToInt32(fahrenheit);
+            int redondeo = Convert.ToInt32(fahrenheit);
 
-                return $"{celsius}ºC convertido a Fahrenheit es {redondeo}ºF ";
-            }
-
+            return $"{celsius}ºC convertido a Fahrenheit es {redondeo}ºF ";
         }
+        public static string ConversionTemperaturaKelvin(double celsius)
+        {
+            double kelvin = 0;
+            kelvin = celsius + 273.15;
+
+            return $"{celsius}ºC convertido a Kelvin es {kelvin}ºF ";
+        }
+
     }
+
+}
+ 
+
     
 

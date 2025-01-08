@@ -14,14 +14,20 @@ namespace MainProgram
 
              Console.WriteLine(result);*/
 
-           /* Exercici2 int bas = int.Parse(Console.ReadLine());
-            int altura = int.Parse(Console.ReadLine());
-            string result = MyLibrary.Math.CalculateAreaTriangule(bas, altura);
-            Console.WriteLine($"El area es : {result}");*/
+            /* Exercici2 int bas = int.Parse(Console.ReadLine());
+             int altura = int.Parse(Console.ReadLine());
+             string result = MyLibrary.Math.CalculateAreaTriangule(bas, altura);
+             Console.WriteLine($"El area es : {result}");*/
+
+            /*Exercici3 Console.WriteLine("Introduce un numero");
+            double celsius = Convert.ToInt32(Console.ReadLine());
+            string result = MyLibrary.Math.ConversionTemperaturaFahrenheit(celsius);
+
+            Console.WriteLine(result);*/
 
             Console.WriteLine("Introduce un numero");
             double celsius = Convert.ToInt32(Console.ReadLine());
-            string result = MyLibrary.Math.ConversionTemperatura(celsius);
+            string result = MyLibrary.Math.ConversionTemperaturaKelvin(celsius);
 
             Console.WriteLine(result);
 
