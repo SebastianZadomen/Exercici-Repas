@@ -7,30 +7,22 @@ namespace MainProgram
     {
         public static void Main(string[] args)
         {
-            /*string result;
-            int userseg = Convert.ToInt32(Console.ReadLine());
-            int seg = userseg;
-            int cont = 0;
-            int min = 0;
+            /* Console.Write("Ingresa el número de segundos: ");
+             int userseg = Convert.ToInt32(Console.ReadLine());
 
-  
-                if (seg >= 60)
-                {
-                    cont++;
-                    seg = seg - 60;
-                    min = seg;
+             string result = MyLibrary.Math.ConvertTime(userseg);
 
-                }
-            if (seg <= 60)
-            {
-                seg = seg / 100;
-                seg = seg * 10;
-                   
-            }
-                 
-           Console.WriteLine($"{cont} hora, {min} minutos,{seg}segundos");*/
+             Console.WriteLine(result);*/
 
             int bas = int.Parse(Console.ReadLine());
+            int altura = int.Parse(Console.ReadLine());
+            string result = MyLibrary.Math.CalculateAreaTriangule(bas, altura);
+            Console.WriteLine($"El area es : {result}");
+        }
+    }
+}
+
+        /*int bas = int.Parse(Console.ReadLine());
             int altura = int.Parse(Console.ReadLine());
 
             int result;
@@ -46,6 +38,6 @@ namespace MainProgram
             }
         }
     }
-    }
+    }*/
 
 

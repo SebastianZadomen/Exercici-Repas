@@ -2,19 +2,29 @@
 {
     public class Math
     {
-        public static string ConvertTime (int seg) 
+        public static string ConvertTime (int userseg) 
             {
-            string result;
-            seg = seg / 60;
-            int cont= 0;
 
-            if (seg == 60)
-            { 
-                cont = 1;
-                seg = seg - 60;
-           
+            int horas = userseg / 3600;
+            int minutos = (userseg % 3600) / 60;
+            int segundos = userseg % 60;
+
+            return $"{horas} horas, {minutos} minutos, {segundos} segundos";
+        }
+        public static string CalculateAreaTriangule(int bas, int altura)
+        {
+            int result;
+            if (bas > 0 && altura > 0)
+            {
+                result = bas * altura;
+                result = result / 2;
+                return result.ToString();
             }
-            return result=$"{cont} hora, {seg} segundos,";
+            else
+            {
+                return "Algunos de sus numeros es negativo";
             }
+        }
     }
-}
+    }
+
