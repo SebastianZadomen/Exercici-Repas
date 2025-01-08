@@ -14,30 +14,20 @@ namespace MainProgram
 
              Console.WriteLine(result);*/
 
-            int bas = int.Parse(Console.ReadLine());
+           /* Exercici2 int bas = int.Parse(Console.ReadLine());
             int altura = int.Parse(Console.ReadLine());
             string result = MyLibrary.Math.CalculateAreaTriangule(bas, altura);
-            Console.WriteLine($"El area es : {result}");
+            Console.WriteLine($"El area es : {result}");*/
+
+            Console.WriteLine("Introduce un numero");
+            double celsius = Convert.ToInt32(Console.ReadLine());
+            string result = MyLibrary.Math.ConversionTemperatura(celsius);
+
+            Console.WriteLine(result);
+
         }
     }
 }
 
-        /*int bas = int.Parse(Console.ReadLine());
-            int altura = int.Parse(Console.ReadLine());
-
-            int result;
-            if (bas > 0 && altura > 0)
-            {
-                result = bas * altura;
-                result = result / 2;
-                Console.WriteLine(result);
-            }
-            else
-            {
-                Console.WriteLine("Algunos de sus numeros es negativo");
-            }
-        }
-    }
-    }*/
 
 

@@ -25,6 +25,18 @@
                 return "Algunos de sus numeros es negativo";
             }
         }
+        public static string ConversionTemperatura(double celsius)
+        {
+                double fahrenheit = 0;
+                fahrenheit = celsius * 1.8;
+                fahrenheit = fahrenheit + 32;
+
+                int redondeo = Convert.ToInt32(fahrenheit);
+
+                return $"{celsius}ºC convertido a Fahrenheit es {redondeo}ºF ";
+            }
+
+        }
     }
-    }
+    
 
