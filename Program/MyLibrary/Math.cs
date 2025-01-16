@@ -2,8 +2,8 @@
 {
     public class Math
     {
-        public static string ConvertTime (int userseg) 
-            {
+        public static string ConvertTime(int userseg)
+        {
 
             int horas = userseg / 3600;
             int minutos = (userseg % 3600) / 60;
@@ -42,7 +42,11 @@
 
             return $"{celsius}ºC convertido a Kelvin es {kelvin}ºF ";
         }
-
+        public static double ConvertirKelvinAFahrenheit(double kelvin)
+        {
+            double fahrenheit = (kelvin - 273.15) * 9 / 5 + 32;
+            return fahrenheit;
+        }
     }
 
 }
