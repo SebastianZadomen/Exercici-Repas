@@ -47,6 +47,16 @@
             double fahrenheit = (kelvin - 273.15) * 9 / 5 + 32;
             return fahrenheit;
         }
+        public static double CalcularDescompte(double precioInicial, double precioDescompte)
+        {
+            if (precioInicial <= 0)
+            {
+                throw new ArgumentException("El precio incial debe ser mayor a 0");
+            }
+
+            double descompte = ((precioInicial - precioDescompte) / precioInicial) * 100;
+            return descompte;
+        }
     }
 
 }
