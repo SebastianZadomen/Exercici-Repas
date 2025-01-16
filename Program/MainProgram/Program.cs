@@ -7,45 +7,33 @@ namespace MainProgram
     {
         public static void Main(string[] args)
         {
-            /*string result;
-            int userseg = Convert.ToInt32(Console.ReadLine());
-            int seg = userseg;
-            int cont = 0;
-            int min = 0;
+            /* Console.Write("Ingresa el número de segundos: ");
+             int userseg = Convert.ToInt32(Console.ReadLine());
 
-  
-                if (seg >= 60)
-                {
-                    cont++;
-                    seg = seg - 60;
-                    min = seg;
+             string result = MyLibrary.Math.ConvertTime(userseg);
 
-                }
-            if (seg <= 60)
-            {
-                seg = seg / 100;
-                seg = seg * 10;
-                   
-            }
-                 
-           Console.WriteLine($"{cont} hora, {min} minutos,{seg}segundos");*/
+             Console.WriteLine(result);*/
 
-            int bas = int.Parse(Console.ReadLine());
-            int altura = int.Parse(Console.ReadLine());
+            /* Exercici2 int bas = int.Parse(Console.ReadLine());
+             int altura = int.Parse(Console.ReadLine());
+             string result = MyLibrary.Math.CalculateAreaTriangule(bas, altura);
+             Console.WriteLine($"El area es : {result}");*/
 
-            int result;
-            if (bas > 0 && altura > 0)
-            {
-                result = bas * altura;
-                result = result / 2;
-                Console.WriteLine(result);
-            }
-            else
-            {
-                Console.WriteLine("Algunos de sus numeros es negativo");
-            }
+            /*Exercici3 Console.WriteLine("Introduce un numero");
+            double celsius = Convert.ToInt32(Console.ReadLine());
+            string result = MyLibrary.Math.ConversionTemperaturaFahrenheit(celsius);
+
+            Console.WriteLine(result);*/
+
+            Console.WriteLine("Introduce un numero");
+            double celsius = Convert.ToInt32(Console.ReadLine());
+            string result = MyLibrary.Math.ConversionTemperaturaKelvin(celsius);
+
+            Console.WriteLine(result);
+
         }
     }
-    }
+}
+
 
 
