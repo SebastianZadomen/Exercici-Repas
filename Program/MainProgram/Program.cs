@@ -32,8 +32,8 @@ namespace MainProgram
             Console.WriteLine(result);
             */
 
-            int userNum = Convert.ToInt32(Console.ReadLine());
-            string total = MyLibrary.Math.ConversionDecimalAHexadecimal(userNum);
+            string userNum = Console.ReadLine();
+            bool total = MyLibrary.Math.CodePostal(userNum);
             Console.WriteLine(total);
             Console.ReadKey();
 

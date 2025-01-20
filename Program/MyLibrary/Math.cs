@@ -1,4 +1,6 @@
-﻿namespace MyLibrary
+﻿using System.Diagnostics.Contracts;
+
+namespace MyLibrary
 {
     public class Math
     {
@@ -63,8 +65,8 @@
 
             while (userNum > 0) 
             {
-                int residuo = userNum % 16; 
-                string hexadecimal = ""
+                int residuo = userNum % 16;
+                string hexadecimal = "";
 
                 if (residuo >= 10)
                 {
@@ -80,6 +82,20 @@
             }
 
             return total; 
+        }
+        public static bool CodePostal(string codePostal)
+        {
+          
+            int numero;
+
+            if (int.TryParse(codePostal, out numero))
+            {
+                if (numero >= 0 && numero <= 99999 && codePostal.Length == 5)
+                {
+                    return true; 
+                }
+            }
+            return false;
         }
     }
 
