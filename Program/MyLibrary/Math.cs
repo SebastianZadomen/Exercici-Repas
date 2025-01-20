@@ -106,6 +106,17 @@ namespace MyLibrary
 
             return propina;
         }
+        //Defineix un mètode recursiu que retorni el nombre de dígits d'un número enter.
+
+        public static int ContadorDigits(int userNum,int count)
+        {
+            if (userNum == 0)
+            {
+                return count;
+                
+            }
+            return ContadorDigits(userNum / 10, count + 1);
+        }
     }
 
 }

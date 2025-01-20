@@ -30,13 +30,22 @@ namespace MainProgram
             string result = MyLibrary.Math.ConversionTemperaturaKelvin(celsius);
 
             Console.WriteLine(result);
-            */
+            
 
+            
             double userNum = Convert.ToDouble(Console.ReadLine());
             int numPersona = Convert.ToInt32(Console.ReadLine());
             double propina = MyLibrary.Math.CalculPropina(userNum,numPersona);
             Console.WriteLine(propina);
             Console.ReadKey();
+            */
+            int count = 0;
+            int numDigits = Convert.ToInt32(Console.ReadLine());
+            int digitsTotal = MyLibrary.Math.ContadorDigits(numDigits,count);
+            Console.WriteLine(digitsTotal);
+            Console.ReadKey();
+
+
 
         }
     }
