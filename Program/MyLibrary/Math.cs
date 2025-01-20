@@ -117,6 +117,22 @@ namespace MyLibrary
             }
             return ContadorDigits(userNum / 10, count + 1);
         }
+        //Implementa un mètode que avalua si un array està ordenat o no.
+        public static bool ArrayOrden(int[] nums, bool comprobacion)
+        {
+            for (int i = 0; i < nums.Length - 1; i++)
+            {
+        
+                if (nums[i] > nums[i + 1])
+                {
+                    return false;
+                }
+            }
+         
+            return true;
+        }
+
+    
     }
 
 }

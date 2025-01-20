@@ -38,13 +38,25 @@ namespace MainProgram
             double propina = MyLibrary.Math.CalculPropina(userNum,numPersona);
             Console.WriteLine(propina);
             Console.ReadKey();
-            */
+            
             int count = 0;
             int numDigits = Convert.ToInt32(Console.ReadLine());
             int digitsTotal = MyLibrary.Math.ContadorDigits(numDigits,count);
             Console.WriteLine(digitsTotal);
             Console.ReadKey();
+            */
 
+            bool comprobacion = true;
+            int arrayTotal = Convert.ToInt16(Console.ReadLine());
+            int[] num = new int[arrayTotal];
+
+            for (int i = 0; i < arrayTotal; i++)
+            {
+                num[i] = Convert.ToInt32(Console.ReadLine());
+            }
+
+            bool flag = MyLibrary.Math.ArrayOrden(num, comprobacion);
+            Console.WriteLine(flag);
 
 
         }
