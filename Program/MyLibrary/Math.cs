@@ -97,6 +97,13 @@ namespace MyLibrary
             }
             return false;
         }
+        //Als EEUU és tradició deixar mínim el 20% del cost d'un ticket de restaurant en propina. Implementa un mètode que rebi per paràmetre un import i retorni la propina que s’hauria de deixar.
+        public static double CalculPropina(double import)
+        {
+            double propina =import * 0.20;
+            
+            return propina;
+        }
     }
 
 }

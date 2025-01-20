@@ -32,9 +32,9 @@ namespace MainProgram
             Console.WriteLine(result);
             */
 
-            string userNum = Console.ReadLine();
-            bool total = MyLibrary.Math.CodePostal(userNum);
-            Console.WriteLine(total);
+            double userNum = Convert.ToDouble(Console.ReadLine());
+            double propina = MyLibrary.Math.CalculPropina(userNum);
+            Console.WriteLine(propina);
             Console.ReadKey();
 
         }
