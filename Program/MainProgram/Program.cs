@@ -33,7 +33,8 @@ namespace MainProgram
             */
 
             double userNum = Convert.ToDouble(Console.ReadLine());
-            double propina = MyLibrary.Math.CalculPropina(userNum);
+            int numPersona = Convert.ToInt32(Console.ReadLine());
+            double propina = MyLibrary.Math.CalculPropina(userNum,numPersona);
             Console.WriteLine(propina);
             Console.ReadKey();
 
