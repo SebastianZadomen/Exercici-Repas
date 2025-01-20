@@ -57,6 +57,30 @@
             double descompte = ((precioInicial - precioDescompte) / precioInicial) * 100;
             return descompte;
         }
+        public static string ConversionDecimalAHexadecimal(int userNum)
+        {
+            string total = ""; 
+
+            while (userNum > 0) 
+            {
+                int residuo = userNum % 16; 
+                string hexadecimal = ""
+
+                if (residuo >= 10)
+                {
+                    hexadecimal = ((char)('A' + (residuo - 10))).ToString(); 
+                }
+                else
+                {
+                    hexadecimal = residuo.ToString();
+                }
+
+                total = hexadecimal + total; 
+                userNum /= 16; 
+            }
+
+            return total; 
+        }
     }
 
 }

@@ -25,11 +25,17 @@ namespace MainProgram
 
             Console.WriteLine(result);*/
 
-            Console.WriteLine("Introduce un numero");
+            /*Console.WriteLine("Introduce un numero");
             double celsius = Convert.ToInt32(Console.ReadLine());
             string result = MyLibrary.Math.ConversionTemperaturaKelvin(celsius);
 
             Console.WriteLine(result);
+            */
+
+            int userNum = Convert.ToInt32(Console.ReadLine());
+            string total = MyLibrary.Math.ConversionDecimalAHexadecimal(userNum);
+            Console.WriteLine(total);
+            Console.ReadKey();
 
         }
     }
